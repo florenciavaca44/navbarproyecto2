@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.507);
+}
+/*animacion*/
+.flip-scale-up-hor {
+	-webkit-animation: flip-scale-up-hor 0.5s linear both;
+	        animation: flip-scale-up-hor 0.5s linear both;
+            color: #d4e932;
+}
+ @-webkit-keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+              transform: scale(2.5) rotateX(-90deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-360deg);
+              transform: scale(1) rotateX(-360deg);
+    }
+  }
+  @keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+              transform: scale(2.5) rotateX(-90deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-360deg);
+              transform: scale(1) rotateX(-360deg);
+    }
+}
+
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    left:50%;
+    background:#d4e9328c;
+    padding: 10px;
+    height: 40px;
+    border-radius:40px ;
+  }
+  .buscarCancion{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: .2s;
+    width: 0;
+  }
+  .botonBuscar{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 30px;
+  
+  }
+
+  /* responsive*/
+  @media screen and (max-width :576px){
+    .buscar:hover > .buscarCancion{
+        width: 190px;
+    }
+  }
+
+  @media screen and (max-width :768px){
+    .buscar:hover > .buscarCancion{
+        width: 300px;
+    }
+  }
+
+  @media screen and (max-width :1400px){
+    .buscar:hover > .buscarCancion{
+        width: 500px;
+    }
+  }
